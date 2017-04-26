@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function pi(m){
+			return Math.pow(-1,m-1)/(2*m-1);
+		}
+		function pai(n){
+			var sum=0;
+			for(var i=1; i<=n;i++){
+				sum+=pi(i);
+			}
+			return sum*4;
+		}
+		document.write(pai(100));	
+	</script>
+</body>
+</html>
